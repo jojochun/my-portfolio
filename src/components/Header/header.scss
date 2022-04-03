@@ -11,18 +11,42 @@
     padding: 10px 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-  }
+    justify-content: space-between;
 
-  .left {
-    display: flex;
-    align-items: center;
+    .left {
+      display: flex;
+      align-items: center;
 
-    .logo {
-      font-size: 40px;
-      font-weight: 300;
-      text-decoration: none;
-      color: inherit;
+      .logo {
+        font-size: 40px;
+        font-weight: 300;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 40px;
+      }
+      .span {
+        font-size: 40px;
+        text-decoration: none;
+      }
+    }
+
+    .right {
+      .nav {
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 20px;
+        justify-content: space-between;
+
+        .span {
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
   }
 }
