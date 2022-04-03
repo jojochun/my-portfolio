@@ -3,7 +3,14 @@ import "./portfolio.scss";
 export default function Portfolio() {
   return (
     <div className="portfolio" id="portfolio">
-      Portfolio
+      <h1>Portfolio</h1>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   );
 }

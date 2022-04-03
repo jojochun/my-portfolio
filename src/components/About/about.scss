@@ -1,5 +1,5 @@
 .about {
-  background-color: aquamarine;
+  background-color: white;
   display: flex;
 
   .left {
@@ -37,6 +37,7 @@
 
       h1 {
         font-size: 35px;
+        margin: 10px 0;
       }
       h2 {
         font-size: 25px;
@@ -48,6 +49,18 @@
 
     a {
       position: absolute;
+      bottom: 10px;
+      left: 50%;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
     }
   }
 }
