@@ -1,0 +1,19 @@
+.app {
+  height: 100vh;
+
+  .sections {
+    width: 100%;
+    height: 700px;
+    background-color: lightgray;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+    > * {
+      width: 100vw;
+      height: 700px;
+      scroll-snap-align: start;
+    }
+  }
+}
