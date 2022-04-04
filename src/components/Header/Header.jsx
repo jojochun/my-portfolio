@@ -8,12 +8,10 @@ export default function Header() {
           <a href="about" className="logo">
             Joanne Chun
           </a>
-
-          <div></div>
         </div>
 
         <div className="right">
-          <div className="nav">
+          <nav>
             <span>
               <a href="#about">Home</a>
             </span>
@@ -26,7 +24,7 @@ export default function Header() {
             <span>
               <a href="#contact">Contact</a>
             </span>
-          </div>
+          </nav>
         </div>
       </div>
     </div>

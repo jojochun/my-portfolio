@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 75px;
-  background-color: darkcyan;
+  background-color: rgb(4, 119, 119);
   color: white;
   position: fixed;
   top: 0;
@@ -22,29 +22,29 @@
         font-weight: 300;
         text-decoration: none;
         color: inherit;
-        margin-right: 40px;
-      }
-      .span {
-        font-size: 40px;
-        text-decoration: none;
+        margin-right: 30px;
       }
     }
 
     .right {
-      .nav {
+      nav {
         display: flex;
         align-items: center;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 300;
         text-decoration: none;
         margin-right: 20px;
         justify-content: space-between;
 
-        .span {
+        span {
           display: flex;
-          justify-content: space-between;
+        }
+
+        a {
           text-decoration: none;
           color: white;
+          justify-content: space-between;
+          margin-right: 35px;
         }
       }
     }

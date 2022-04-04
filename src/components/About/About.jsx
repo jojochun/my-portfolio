@@ -10,7 +10,7 @@ export default function About() {
     init(textRef.current, {
       showCursor: false,
       backDelay: 1500,
-      strings: ["Use with React.js!", "Yeah!"],
+      strings: ["Innovate", "Craft", "Program", "Develop"],
     });
   }, []);
   return (
@@ -23,11 +23,16 @@ export default function About() {
 
       <div className="right">
         <div className="wrapper">
-          <h2>My name is </h2>
-          <h1>Joanne Chun</h1>
           <h3>
-            The end of all knowledge<span ref={textRef}></span>
+            I am a bioengineering/pharmaceutical scientist researching the
+            molecular genetics and signaling pathways during liver cancer
+            growth. My goal is to apply my knowledge of computer science and
+            coding to help develop new therapies to treat this deadly disease.
           </h3>
+          <h1>Joanne Chun</h1>
+          <h2>
+            Aiming to <span ref={textRef}></span>
+          </h2>
         </div>
         <a href="#portfolio">
           <img src="assets/arrow.png" alt="down arrow" />
