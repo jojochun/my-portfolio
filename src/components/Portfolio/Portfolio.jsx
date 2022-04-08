@@ -12,15 +12,60 @@ import team from "../../projectassets/projectimages/Team-profile.png";
 
 export default function Portfolio() {
   const projects = [
-    { title: "Penguin Planner", url: "", repo: "", img: penguin },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
-    { title: "", url: "", repo: "", img: "" },
+    {
+      title: "Penguin Planner",
+      url: "https://penguin-planner.herokuapp.com/",
+      repo: "https://github.com/stuart-rickard/gp-penguin",
+      img: penguin,
+    },
+    {
+      title: "Run Buddy",
+      url: "https://jojochun.github.io/run-buddy/",
+      repo: "https://github.com/jojochun/run-buddy",
+      img: run,
+    },
+    {
+      title: "Budget Tracker",
+      url: "https://jojochun.github.io/budget-tracker/",
+      repo: "https://github.com/jojochun/budget-tracker",
+      img: budgetTracker,
+    },
+    {
+      title: "Sunny Weekend",
+      url: "https://deivrs60.github.io/sunny-weekend/",
+      repo: "https://github.com/deivrs60/sunny-weekend",
+      img: sunny,
+    },
+    {
+      title: "Weather Dashboard",
+      url: "https://jojochun.github.io/weather-dashboard/",
+      repo: "https://github.com/jojochun/weather-dashboard",
+      img: weather,
+    },
+    {
+      title: "Work Day Scheduler",
+      url: "https://jojochun.github.io/Work-Day-Scheduler/",
+      repo: "https://github.com/jojochun/Work-Day-Scheduler",
+      img: scheduler,
+    },
+    {
+      title: "Coding Quiz",
+      url: "https://jojochun.github.io/CodingQuiz/",
+      repo: "https://github.com/jojochun/CodingQuiz",
+      img: quiz,
+    },
+    {
+      title: "Horiseon",
+      url: "https://jojochun.github.io/refactorcode/",
+      repo: "https://github.com/jojochun/refactorcode",
+      img: horiseon,
+    },
+    {
+      title: "Team Profile",
+      url: "https://jojochun.github.io/Team-Profile-Generator/",
+      repo: "https://github.com/jojochun/Team-Profile-Generator",
+      img: team,
+    },
   ];
   return (
     <div className="portfolio" id="portfolio">
@@ -30,76 +75,11 @@ export default function Portfolio() {
         {projects.map((project) => (
           <div className="item">
             <h3>{project.title}</h3>
-            <a href="https://penguin-planner.herokuapp.com/" target="_blank">
+            <a href={project.url} target="_blank" rel="noreferrer">
               <img src={project.img} alt="" />
             </a>
           </div>
         ))}
-
-        <div className="item">
-          <a href="https://jojochun.github.io/run-buddy/" target="_blank">
-            <img src={run} alt="" />
-          </a>
-          <h3>Run Buddy</h3>
-        </div>
-
-        <div className="item">
-          <a href="https://jojochun.github.io/budget-tracker/" target="_blank">
-            <img src={budgetTracker} alt="" />
-          </a>
-          <h3>Budget Tracker</h3>
-        </div>
-
-        <div className="item">
-          <a href="https://deivrs60.github.io/sunny-weekend/" target="_blank">
-            <img src={sunny} alt="" />
-          </a>
-          <h3>Sunny Weekend</h3>
-        </div>
-
-        <div className="item">
-          <a
-            href="https://jojochun.github.io/weather-dashboard/"
-            target="_blank"
-          >
-            <img src={weather} alt="" />
-          </a>
-          <h3>Weather Dashboard</h3>
-        </div>
-
-        <div className="item">
-          <a
-            href="https://jojochun.github.io/Work-Day-Scheduler/"
-            target="_blank"
-          >
-            <img src={scheduler} alt="" />
-          </a>
-          <h3>Work Day Scheduler</h3>
-        </div>
-
-        <div className="item">
-          <a href="https://jojochun.github.io/CodingQuiz/" target="_blank">
-            <img src={quiz} alt="" />
-          </a>
-          <h3>Coding Quiz</h3>
-        </div>
-
-        <div className="item">
-          <a href="https://jojochun.github.io/refactorcode/" target="_blank">
-            <img src={horiseon} alt="" />
-          </a>
-          <h3>Horiseon</h3>
-        </div>
-
-        <div className="item">
-          <a
-            href="https://jojochun.github.io/Team-Profile-Generator/"
-            target="_blank"
-          >
-            <img src={team} alt="" />
-          </a>
-          <h3>Team Profile</h3>
-        </div>
       </div>
     </div>
   );

@@ -10,12 +10,18 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/puzzle.jpg" alt="" />
+        <h1>Let's Connect!</h1>
+
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="email" />
+          <textarea placeholder="message"></textarea>
+          <button type="submit">Send</button>
+          {message && <span>Thank you for contacting me!</span>}
+        </form>
       </div>
 
       <div className="right">
-        <h1>Let's Connect!</h1>
-
+        <img src="assets/puzzle.jpg" alt="" />
         <div class="tel">
           <p>808.780.4564</p>
         </div>
