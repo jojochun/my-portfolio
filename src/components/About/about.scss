@@ -1,9 +1,16 @@
+@import "../../global.scss";
+
 .about {
   background-color: rgb(228, 238, 228);
   /* background-image: url(../../../public/assets/dna.png); */
   background-size: cover;
   background-position: center;
   display: flex;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.3;
@@ -17,6 +24,12 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+
+      @include mobile {
+        align-items: center;
+        width: 300px;
+        height: 300px;
+      }
 
       img {
         height: 40%;
