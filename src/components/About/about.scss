@@ -16,6 +16,10 @@
     flex: 0.3;
     overflow: hidden;
 
+    @include mobile {
+      flex: 0.33;
+    }
+
     .photo {
       width: 500px;
       height: 500px;
@@ -24,6 +28,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      padding-top: 20px;
 
       @include mobile {
         align-items: center;
@@ -43,6 +48,10 @@
     flex: 0.7;
     position: relative;
 
+    @include mobile {
+      flex: 0.67;
+    }
+
     .wrapper {
       width: 80%;
       height: 100%;
@@ -51,15 +60,34 @@
       flex-direction: column;
       justify-content: center;
 
+      @include mobile {
+        align-items: center;
+      }
+
       h1 {
         font-size: 35px;
         margin: 10px 0;
+        font-weight: 400;
+
+        @include mobile {
+          font-size: 30px;
+        }
       }
       h2 {
         font-size: 25px;
+        color: rgb(49, 142, 142);
+
+        @include mobile {
+          font-size: 20px;
+        }
       }
       h3 {
         font-size: 20px;
+        font-weight: 400;
+
+        @include mobile {
+          font-size: 18px;
+        }
       }
     }
 
