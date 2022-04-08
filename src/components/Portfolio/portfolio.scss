@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .portfolio {
   background-color: rgb(182, 206, 182);
   color: rgb(4, 119, 119);
@@ -6,8 +8,12 @@
   align-items: center;
   padding-top: 60px;
 
+  @include mobile {
+  }
+
   h1 {
-    font-size: 35px;
+    padding-bottom: 20px;
+    font-size: 25px;
   }
 
   .container {
@@ -17,6 +23,10 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
+
+    @include mobile {
+      padding: 0;
+    }
 
     .item {
       width: 200px;
@@ -46,12 +56,6 @@
 
       a {
         display: block;
-      }
-
-      &:hover {
-        background-color: rgb(249, 250, 215);
-        img {
-        }
       }
     }
   }
