@@ -19,7 +19,9 @@ export default function Header() {
               <a href="#portfolio">Portfolio</a>
             </span>
             <span>
-              <a href="#footer">Resume</a>
+              <a href="assets/JoanneCHUN.pdf" target="_blank">
+                Resume
+              </a>
             </span>
             <span>
               <a href="#contact">Contact</a>

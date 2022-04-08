@@ -11,17 +11,30 @@ import horiseon from "../../projectassets/projectimages/Horiseon.png";
 import team from "../../projectassets/projectimages/Team-profile.png";
 
 export default function Portfolio() {
+  const projects = [
+    { title: "Penguin Planner", url: "", repo: "", img: penguin },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+    { title: "", url: "", repo: "", img: "" },
+  ];
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
 
       <div className="container">
-        <div className="item">
-          <a href="https://penguin-planner.herokuapp.com/" target="_blank">
-            <img src={penguin} alt="" />
-          </a>
-          <h3>Penguin Planner</h3>
-        </div>
+        {projects.map((project) => (
+          <div className="item">
+            <h3>{project.title}</h3>
+            <a href="https://penguin-planner.herokuapp.com/" target="_blank">
+              <img src={project.img} alt="" />
+            </a>
+          </div>
+        ))}
 
         <div className="item">
           <a href="https://jojochun.github.io/run-buddy/" target="_blank">
