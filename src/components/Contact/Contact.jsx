@@ -22,20 +22,20 @@ export default function Contact() {
 
       <div className="right">
         <img src="assets/puzzle.jpg" alt="" />
-        <div class="tel">
+        <div className="tel">
           <p>808.780.4564</p>
         </div>
-        <div class="email">
+        <div className="email">
           <a href="mailto:jkchun@protonmail.com">
             <p>jkchun@protonmail.com</p>
           </a>
         </div>
-        <div class="git">
+        <div className="git">
           <a href="https://github.com/jojochun" target="_blank">
             <p>github</p>
           </a>
         </div>
-        <div class="link">
+        <div className="link">
           <a
             href="https://www.linkedin.com/in/joanne-chun-20b86313a/"
             target="_blank"

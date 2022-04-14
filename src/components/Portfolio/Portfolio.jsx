@@ -72,12 +72,13 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
 
       <div className="container">
-        {projects.map((project) => (
-          <div className="item">
+        {projects.map((project, i) => (
+          <div key={i} className="item">
             <h3>{project.title}</h3>
             <a href={project.url} target="_blank" rel="noreferrer">
               <img src={project.img} alt="" />
             </a>
+            <div>github</div>
           </div>
         ))}
       </div>
