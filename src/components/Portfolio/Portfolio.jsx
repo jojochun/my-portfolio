@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./portfolio.scss";
+import apple from "../../projectassets/projectimages/appleorchard.png";
 import penguin from "../../projectassets/projectimages/Penguin-Planner.png";
 import run from "../../projectassets/projectimages/runbuddy.jpeg";
 import budgetTracker from "../../projectassets/projectimages/budget-tracker.png";
@@ -12,6 +13,12 @@ import team from "../../projectassets/projectimages/Team-profile.png";
 
 export default function Portfolio() {
   const projects = [
+    {
+      title: "Happy Harvester",
+      url: "https://happy-harvesters.herokuapp.com",
+      repo: "https://github.com/scottrohrig/apple-orchard-games",
+      img: apple,
+    },
     {
       title: "Penguin Planner",
       url: "https://penguin-planner.herokuapp.com/",
@@ -78,7 +85,11 @@ export default function Portfolio() {
             <a href={project.url} target="_blank" rel="noreferrer">
               <img src={project.img} alt="" />
             </a>
-            <div>github</div>
+            <div>
+              <a href={project.repo} target="_blank" rel="noreferrer">
+                github
+              </a>
+            </div>
           </div>
         ))}
       </div>
