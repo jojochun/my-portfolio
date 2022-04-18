@@ -3,17 +3,19 @@
 My portfolio is created to display my skills and talents and highlight my work using React to render content. The portfolio also contains deployed web applications of my work and meets accessibility standards.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Deployed
 
-In the project directory, you can run:
+https://curious-praline-6da5f7.netlify.app/
 
-### `npm start`
+## Website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://jojochun.github.io/my-portfolio/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screen Shot](screenshot.png)
+
+## Built With
+
+React
 
 ## Contribution
 
