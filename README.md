@@ -11,7 +11,7 @@ https://curious-praline-6da5f7.netlify.app/
 
 https://jojochun.github.io/my-portfolio/
 
-![Screen Shot](screenshot.png)
+![Screen Shot](./public/assets/screenshot.png)
 
 ## Built With
 
